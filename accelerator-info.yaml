@@ -1,0 +1,34 @@
+id: a5bd5210-b8bf-40ba-8c6b-05c3e4b1793f
+timestamp: 2025-05-13T05:32:26.554Z
+source: TAP-GUI
+username: guest
+options:
+  projectName: appsso-starter-java
+  includeBuildToolWrapper: true
+  appssoOfferingName: my-login
+accelerator:
+  name: appsso-starter-java
+  git:
+    url: https://github.com/vmware-tanzu/application-accelerator-samples.git
+    subPath: appsso-starter-java
+    ref: tap-og
+    commit: 3d9af1c116314db20f5cc125108219709010b249
+fragments:
+  - name: app-sso-client
+    git:
+      url: https://github.com/vmware-tanzu/application-accelerator-samples.git
+      subPath: fragments/app-sso-client
+      ref: tap-og
+      commit: 3d9af1c116314db20f5cc125108219709010b249
+  - name: build-wrapper-gradle
+    git:
+      url: https://github.com/vmware-tanzu/application-accelerator-samples.git
+      subPath: fragments/build-wrapper-gradle
+      ref: tap-og
+      commit: 3d9af1c116314db20f5cc125108219709010b249
+  - name: tap-workload
+    git:
+      url: https://github.com/vmware-tanzu/application-accelerator-samples.git
+      subPath: fragments/tap-workload
+      ref: tap-og
+      commit: 3d9af1c116314db20f5cc125108219709010b249
