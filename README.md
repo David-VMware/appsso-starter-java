@@ -1,0 +1,1 @@
+# appsso-starter-java
